@@ -37,6 +37,6 @@
 	<title>Sapper project template</title>
 </svelte:head>
 
-<h1>deployscript works</h1>
+<h1>deployscript works 2</h1>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
