@@ -7,7 +7,7 @@
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
-    "deploy": "git push && ssh server 'cd damk.dev && git pull && /home/oskar/.yarn/bin/yarn build && /home/oskar/.nvm/versions/node/v12.13.0/bin/pm2 restart damk.dev-8443'"
+    "deploy": "rsync -a __sapper__/export/ server:/home/oskar/www/damk.dev"
   },
   "dependencies": {
     "compression": "^1.7.1",
